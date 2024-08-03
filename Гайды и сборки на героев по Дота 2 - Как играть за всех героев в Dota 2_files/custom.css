@@ -1,0 +1,902 @@
+.ticket__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ticket-wrap {
+  margin: 20px;
+}
+
+.widget-tickets {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.badge-img {
+  margin: 0 30px 30px 40px;
+  width: 100px;
+}
+
+.background__layout {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+@media screen and (max-width: 1260px) {
+  .background__layout {
+    display: none;
+  }
+}
+
+.background__link {
+  background-image: url("/static/Site/img/bool.png");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.link-img {
+  margin: 0;
+  padding: 0;
+}
+
+.live-news-widget-title {
+  margin: 0;
+  padding: 0;
+}
+
+.layout-content-full-1080 {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.calendar-week-day {
+  margin: 0;
+}
+
+.grid-4col-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+}
+
+@media screen and (max-width: 1080px) {
+  .grid-4col-footer {
+    display: none;
+  }
+}
+
+.popup {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: visibility 0.6s, opacity 0.6s ease;
+  visibility: hidden;
+  width: 100%;
+}
+
+.popup_opened {
+  visibility: visible;
+  opacity: 1;
+  z-index: 10000;
+}
+
+.popup__form {
+  background-image: url(../img/dota_dekstop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 735px;
+  position: relative;
+}
+
+@media screen and (max-width: 1921px) {
+  .popup__form {
+    background-image: url(../img/dota_dekstop.png);
+    width: 75%;
+    height: 735px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .popup__form {
+    background-image: url(../img/dota_tablet.png);
+    width: 70%;
+    height: 980px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .popup__form {
+    background-image: url(../img/dota_mob.png);
+    width: 90%;
+    height: 600px;
+  }
+}
+
+.popup__close {
+  background-image: url(../img/close-icon.svg);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: -50px;
+  top: -35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+
+.popup__close:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .popup__close {
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    top: -36px;
+  }
+}
+
+.popup__button {
+  padding: 15px 50px 15px;
+  background-color: #e93c27;
+  font-family: "Styrene A Web";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+  border-style: none;
+  border-radius: 10px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.popup__button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .popup__button {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 45px 22px 25px;
+  }
+}
+
+.promo-banner-img {
+  padding: 30px;
+  width: 220px;
+}
+
+.live-news-widget-text {
+  margin: 0;
+}
+
+.live-news-widget-title {
+  margin: 0;
+}
+
+.overview-info-item-img {
+  width: 18px;
+}
+
+.live-news-widget-text {
+  margin: 0;
+}
+
+.stream-preview-streamer-img {
+  width: 70px;
+}
+
+.main-menu-item {
+  margin-top: 0;
+}
+
+.arc-rate-info {
+  margin: 0;
+}
+
+.breadcrumbs__links {
+  color: #fff;
+}
+
+.breadcrumbs__links:hover {
+  opacity: 0.8;
+}
+
+.hero {
+  width: 100%;
+  height: fit-content;
+  min-height: 221px;
+  background: linear-gradient(80deg, #252728 0%, #101415 100%);
+  border-top: 2px solid #282828;
+  border-bottom: 2px solid #2c2e2e;
+  box-shadow: 0px 0px 8px #000;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    display: block;
+  }
+}
+
+.hero__details {
+  width: 100%;
+  max-width: 1600px;
+  padding: 20px 0px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero__details {
+    flex-direction: column;
+  }
+}
+
+
+.hero__details-attributes {
+  min-width: 300px;
+  width: 30%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1500px) {
+  .hero__details-attributes {
+    width: 0;
+  }
+}
+
+.hero__top-attributes-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.hero__portrait-container {
+  width: 150px;
+  height: 135px;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__portrait-img {
+  width: 150px;
+  height: 84px;
+}
+
+.hero__health {
+  width: 150px;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(to right, #286323, #7af03c);
+  position: relative;
+}
+
+.hero__bar-major {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  text-shadow: 1px 1px 2px #000;
+  font-family: Radiance, sans-serif;
+  font-weight: 800;
+}
+
+.hero__bar-minor {
+  color: #286323;
+  flex-grow: 1;
+  text-align: right;
+  font-size: 11px;
+  padding-right: 16px;
+  font-weight: bold;
+}
+
+.hero__manna {
+  width: 150px;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(to right, #1056db, #73f5fe);
+  position: relative;
+}
+
+.hero__attributes {
+  width: 100px;
+  height: 120px;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__single-attribute {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 4px 0px;
+}
+
+.hero__attribute-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.heropage__attribute-value {
+  color: #fff;
+  font-family: Reaver, serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px #000;
+  margin-left: 12px;
+}
+
+.hero__attribute-gain {
+  color: #999;
+  font-size: 15px;
+  text-shadow: 1px 1px 2px #000;
+  margin-left: 8px;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.hero__details-section-footer {
+  color: #969696;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px #000;
+  margin-top: 12px;
+  font-family: "Radiance", "Noto Sans", sans-serif;
+}
+
+.hero__vertical-seperator {
+  width: 1px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero__vertical-seperator {
+    display: none;
+  }
+}
+
+.hero__vertical-seperator:after {
+  content: "";
+  width: 100%;
+  height: 80%;
+  background-color: #4f4f4f;
+}
+
+.hero__details-roles {
+  min-width: 250px;
+  width: 30%;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero__details-roles {
+    width: 100%;
+  }
+}
+
+.hero__roles-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__role {
+  width: 30%;
+  height: 32px;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px;
+}
+
+@media screen and (max-width: 1500px) {
+  .hero__role {
+    height: 50px
+  }
+}
+
+.hero__role-name {
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #fff;
+  font-family: "Radiance", "Noto Sans", sans-serif;
+}
+
+@media screen and (max-width: 1025px) {
+  .hero__role-name {
+    font-size: 12px;
+  }
+}
+
+.hero__bar-container {
+  width: 100%;
+  height: 6px;
+  max-height: 6px;
+  flex-grow: 1;
+  margin-top: 4px;
+  position: relative;
+}
+
+.hero__bar-background {
+  width: 100%;
+  height: 100%;
+  background-color: #4c4c4c;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.hero__bar-filled {
+  height: 100%;
+  width: 0%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #427ed1, 0px 0px 10px #427ed1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition-property: width;
+  transition-duration: 5s;
+  transition-delay: 2s;
+}
+
+.hero__details-stats {
+  min-width: 400px;
+  width: 30%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1500px) {
+  .hero__details-stats {
+    width: 0;
+  }
+}
+
+.hero__stats-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1500px) {
+  .hero__stats-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+.hero_hero-values-section {
+  width: 30%;
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 415px) {
+  .hero_hero-values-section {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+
+.hero__hero-value-title {
+  margin-left: 8px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #969696;
+  margin-bottom: 4px;
+}
+
+@media screen and (max-width: 1500px) {
+  .hero__hero-value-title {
+    margin-left: 0px;
+  }
+}
+
+.hero__value-element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 6px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.hero__value-element-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  font-family: "Radiance", "Noto Sans", sans-serif;
+}
+
+.hero__value-element-text {
+  font-family: "Radiance", "Noto Sans", sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+post-open .post-open-header-wrap {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/posts/16_flat.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.logo-img-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.grid-4col-custom {
+  display: grid;
+  grid-gap: 30px;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 270px);
+  grid-row-gap: 40px;
+}
+
+.product-preview .product-preview-img {
+  height: 160px;
+}
+
+.calculator {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+@media screen and (max-width: 615px) {
+  .calculator {
+    flex-direction: column
+  }
+}
+
+.calculator__block {
+  width: 50%;
+}
+
+@media screen and (max-width: 615px) {
+  .calculator__block {
+    width: 100%;
+  }
+}
+
+.hero_video {
+  display: flex;
+  justify-content: center;
+}
+
+.herovideo__portrait {
+  width: 100%;
+}
+
+.hero__table {
+  margin-top: 50px;
+}
+
+.hero__table-stat {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__form {
+  width: 100%;
+}
+
+.hero__form-input {
+  width: 100%;
+}
+
+.hero__form-label {
+  color: #363636;
+  font-family: "Exo", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.banner-league {
+  background-image: url(../images/background.png);
+  /* background: #051854; */
+
+  width: 100%;
+  z-index: 2;
+}
+
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #051854;
+  opacity: 0.8;
+}
+
+.banner__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.banner__header-logo {
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  width: 220px;
+  height: 30px;
+  margin: 10px;
+  background-size: contain;
+}
+
+.banner__header-text {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #fff;
+  margin: 10px;
+}
+
+.league {
+  display: flex;
+  flex-direction: column;
+}
+
+.league__heading {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.league__date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #06DCFF;
+  margin: 21px auto 47px;
+}
+
+.banner__cards {
+  display: flex;
+  align-items: center;
+}
+
+.banner__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__comand {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .card__comand {
+    width: 108px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .card__comand {
+    width: 120px;
+    margin: 10px;
+  }
+}
+
+.card__versus {
+  width: 100%;
+}
+
+.card__versus-img {
+  padding: 0px;
+  margin-bottom: 55px;
+}
+
+.card__img {
+  background-position: center;
+}
+
+.card__name {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 10px;
+}
+
+.card__ratio {
+  background: #FFFFFF;
+  border-radius: 4px;
+  width: 75px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.card__ratio-number {
+  font-family: "Styrene A Web", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.banner__form {
+  margin: 10px;
+}
+
+.banner__form-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__form-button {
+  border-radius: 10px;
+  border: 2px solid #FFFFFF;
+  background: rgba(0, 19, 81, .2);
+  height: 60px;
+  width: 330px;
+  font-family: "Styrene A Web", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.banner__form-button:hover {
+  background: rgba(237, 66, 38, 1);
+  border: none;
+  color: #FFFFFF;
+}
+
+.text-freebet {
+  font-size: 10px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner__form-button {
+    width: 285px;
+    font-size: 21px;
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+  .banner__form-button {
+    width: 330px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .banner__form-button {
+    width: 280px;
+    font-size: 21px;
+  }
+}
+
+.top-link {
+  padding: 0 16px;
+  position: fixed;
+  top: 800px;
+  right: 10px;
+  z-index: 10;
+}
+
+@media screen and (max-width: 500px) {
+  .top-link {
+    top: 800px;
+    right: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .badge-img {
+    width: 50px;
+  }
+}
+
+.badge-img_hidden {
+  display: none;
+}
